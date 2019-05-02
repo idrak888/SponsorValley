@@ -1,0 +1,785 @@
+$primary-color: #13AB54;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    textarea {
+        width: 400px;
+        border: 1px solid rgb(173, 173, 173);
+        border-radius: 3px;
+        -webkit-appearance: none;
+        padding: 6px;
+    }
+    hr {
+        border-bottom: 1px solid lightgrey;
+        width: 200px;
+    }
+    input {
+        border: 1px solid rgb(173, 173, 173);
+        border-radius: 3px;
+        -webkit-appearance: none;
+    }
+    .input {
+        margin-top: 4px;
+        border: 1px solid rgb(173, 173, 173);
+        border-radius: 3px;
+        -webkit-appearance: none;
+        padding: 6px;
+        width: 400px;
+    }
+}
+.corner {
+    position: relative;
+    img {
+        position: fixed;
+        bottom: 0px;
+        padding: 20px;
+        right: 0px;
+        width: 110px;
+        filter: drop-shadow(0 0 0.2rem rgb(70, 70, 70));
+        cursor: pointer;
+    }
+}
+.Header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+    margin-top: -60px;
+    font-size: 15px;
+    .signout {
+        display: none;
+    }
+    a {
+        color: black;
+    }
+    .navbar-toggler-icon {
+        font-size: 13px;
+        color: black;
+        padding: 5px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .navbar-right{
+        .link, a {
+            &:hover {
+                text-decoration: underline;
+            }
+            cursor: pointer;
+            color: $primary-color;
+            font-size: 17px;
+            padding: 0px 10px;
+        }
+    }
+}
+.HomeMain {
+    margin-top: 60px;
+    .Banner {
+        margin-top: 50px;
+        width: 100%;
+        padding: 60px 40px;
+        height: 500px;
+        color: white;
+        font-size: 17px;
+        background-image: linear-gradient($primary-color, rgb(17, 150, 75));
+        box-shadow: inset 0px 0px 0px grey;
+        .row .col2 {
+            margin-top: 55px;
+        }
+        .row .col-sm-6 {
+            .slideShow {
+                margin-top: -30px;
+                margin-left: 40px;
+                .slide {
+                    img {
+                        width: 340px;
+                        filter: drop-shadow(0 0 0.5rem rgb(70, 70, 70));
+                    }
+                }
+            }
+            .logo {
+                display: none;
+                animation: fadeIn 0.5s ease-out;
+                filter: drop-shadow(0 0 0.25rem rgb(70, 70, 70));
+            }
+        }
+        @keyframes fadeIn {
+            from {opacity: 0.2;}
+            to {opacity: 1;}
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        .btn-green {
+            color: white;
+            background-color: rgb(46, 46, 46);
+            filter: drop-shadow(0 0 0.5rem rgb(70, 70, 70));
+        }
+        .btn {
+            width: 200px;
+            border-radius: 2px;
+            box-shadow: 0;
+        }
+        a {
+            color: white;
+            font-size: 15px;
+        }
+    }
+    .Main {
+        text-align: center;
+        background-color: #FBFBFB;
+        margin-top: -22px;
+        .btn-primary {
+            width: 200px;
+        }
+        .intro-p {
+            font-size: 20px;
+            text-align: left;
+        }
+        hr {
+            border-bottom: 1px solid lightgrey;
+            width: 200px;
+        }
+        .content {
+            padding: 30px;
+            margin: 80px 90px 0px 90px;
+        }
+        .GetStarted {
+            margin-top: 20px;
+            background-color: white;
+            text-align: left;
+            overflow-x: hidden;
+            ul li {
+                list-style-type: none;
+                font-size: 18px;
+            }
+            .row .col-sm-6 {
+                margin: auto;
+                padding: 30px 50px;
+                .btn {
+                    width: 90%;
+                    display: block;
+                    margin: auto;
+                    border-radius: 2px;
+                    box-shadow: 3px 3px 3px lightgrey;
+                }
+            }
+            h3 {
+                text-align: center;
+            }
+        }
+        .Widget2 {
+            padding: 10px 16px;
+            height: 800px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            background-color: white;
+            margin: 12px 50px;
+            filter: drop-shadow(0 0 0.3rem rgb(168, 168, 168));
+            overflow-y: hidden;
+            .SponsorModule {
+                .secondary-text {
+                    color: rgb(131, 131, 131);
+                }
+                color: black;
+                background-color: white;
+                position: relative;
+                display: block;
+                padding: 12px 20px;
+                width: 100%;
+                text-align: left;
+                border-bottom: 1px solid rgb(168, 168, 168);
+                .corner {
+                    width: 60px;
+                }
+                h5 {
+                    -webkit-transition: font-size .35s;
+                    transition: font-size .35s; 
+                }
+                &:hover {
+                    background-color: rgb(32, 123, 228);
+                    color: white;
+                    cursor: pointer;
+                    h5 {
+                        font-size: 25px;
+                    }
+                    .secondary-text {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    
+    .WhySponsor {
+        background-color: white;
+        margin-top: 20px;
+        padding: 20px 30px;
+        text-align: center;
+        .col-sm-6 {
+            padding: 20px;
+        }
+        .col-m-4 {
+            margin: 12px auto;
+        }
+        .reasons {
+            width: 270px;
+            height: 300px;
+            padding: 50px 20px;
+            color: white;
+            background-color: #13AB54;
+            border-radius: 4px;
+            display: block;
+            margin: auto;
+            filter: drop-shadow(0 0 0.5rem rgb(85, 85, 85));
+        }
+    }
+}
+
+.SponsorDash, .NonSponsorDash{
+    background-color: #FBFBFB;
+    overflow-x: hidden;
+    .select-logo {
+        .loader {
+            display: none;
+            margin: auto;
+            float: none;
+        }
+        .cross {
+            margin-top: -15px;
+        }
+        h3 {
+            margin-top: 100px;
+        }
+        .btn {
+            width: 200px;
+            margin-top: 20px;
+        }
+    }
+    .responsive {
+        display: none;
+    }
+    .no-sponsors {
+        padding: 30px 25px;
+    }
+    .enter-logo {
+        border: 1px solid rgb(190, 190, 190);
+        color: rgb(173, 173, 173);
+        text-align: center;
+        width: 100%;
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    h4 {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .Top {
+        text-align: center;
+        background-color: rgb(32, 123, 228);
+        width: 100%;
+        padding: 30px 0px 140px 0px;
+        color: white;
+    }
+    
+    .col-m-6 {
+        width: 50%;
+    }
+    .box {
+        display: block;
+        margin: auto;
+        padding: 30px;
+        width: 96%;
+        height: 250px;
+        background-color: white;
+        text-align: left;
+        filter: drop-shadow(0 0 0.25rem rgb(90, 90, 90));
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+    .slide-container {
+        background-color: #FBFBFB;
+        -webkit-overflow-scrolling: touch;
+        width: 96%;
+        display: block;
+        margin: auto;
+        padding: 20px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    .notifications {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding: 30px 3px;
+        .text-primary {
+            text-align: center;
+            font-size: larger;
+        }
+    }
+    .notification {
+        cursor: pointer;
+        display: block;
+        padding: 10px;
+        width: 100%;
+        border-top: 1px solid rgb(168, 168, 168);
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+    .box2 {
+        cursor: pointer;
+        background-color: white;
+        width: 300px;
+        height: 180px;
+        display: inline-block;
+        margin: 6px;
+        filter: drop-shadow(0 0 0.3rem rgb(167, 167, 167));
+       &:hover {
+           background-color: lightgray;
+            filter: none;
+       }
+    }
+    .side {
+        margin-left: 40px;
+        margin-right: 3px;
+        height: 400px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        filter: none;
+        border: 1px solid lightgrey;
+        input {
+            width: 100%;
+            margin-top: 5px;
+            padding: 6px;
+        }
+    }
+    .sponsor-module-container {
+        margin: 20px 5px;
+    }
+    .btn-success {
+        margin: 5px auto;
+        border-radius: 0;
+        width: 200px;
+    }
+    .box1 {
+        padding: 40px 35px;
+        height: auto;
+        margin-top: -100px;
+        .row .col-sm-6 {
+            .text-primary {
+                font-size: large;
+            }
+            .notifications {
+                overflow-y: scroll;
+                height: 200px;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    }
+    .side {
+        height: 400px;
+        padding-top: 20px;
+    }
+}
+.Dashboard {
+    margin-top: 60px;
+    .responsive {
+        display: none;
+    }
+    .NotLoggedIn {
+        padding: 50px 20px;
+        margin: 0px 20px;
+        margin-top: 12vh;
+    }
+}
+.SponsorModule {
+    position: relative;
+    display: block;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    .corner {
+        width: 60px;
+    }
+}
+#Widget3 {
+    padding: 40px 20px;
+    background-image: linear-gradient(rgb(31, 32, 46), rgb(39, 39, 39));
+    color: white;
+    overflow-x: hidden;
+    .row .col-sm-6, .row .col-m-12 {
+        p {
+            font-size: large;
+        }
+        img {
+            width: 300px;
+        }
+        padding: 30px 20px;
+        display: block;
+        margin: auto;
+    }
+}
+.Widget1 {
+    margin-top: 20px;
+    padding: 20px;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: white;
+    display: none;
+    .row .col-xs-4 {
+        img {
+            width: 80px;
+            display: block;
+            margin: auto;
+        }
+        margin: auto;
+        font-size: 18px;
+        text-align: left;
+        padding: 20px 10px;
+    }
+}
+
+.Footer {
+    margin-top: 50px;
+    .Bottom {
+        padding: 50px 40px;
+        background-color: rgb(44, 44, 44);
+        color: white;
+        img {
+            padding: 10px;
+            width: 50px;
+        }
+        a {
+            color: white;
+        }
+        .btn {
+            border-radius: 0;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            height: 40px; 
+            margin-top: -2px;
+        }
+        input {
+            -webkit-appearance: none;
+            border: 0;
+            border-radius: 0;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            margin-top: 3px;
+            width: 200px;
+            height: 40px;
+            padding: 6px;
+            margin-bottom: 20px;
+        }
+    }
+    .Contact {
+        text-align: center;
+        padding: 30px;
+        color: white;
+        background-color: $primary-color;
+        input, textarea, .btn {
+            -webkit-appearance: none;
+            border: 0;
+            filter: drop-shadow(0 0 0.5rem rgb(95, 95, 95));
+            margin-top: 6px;
+            width: 300px;
+            padding: 6px;
+        }
+        img {
+            width: 70px;
+        }
+    }
+}
+.SponsorSignUp, .Signin {
+    margin-top: 60px;
+    text-align: center;
+    .page2 {
+        display: none;
+    }
+    .btn-success {
+        width: 400px;
+        border-radius: 2px;
+        box-shadow: 0;
+    }
+    .row .col-xs-6 {
+        margin: auto;
+        width: 200px;
+    }
+    .categoryOther, .platformOther {
+        display: none;
+        margin: 5px 0px;
+    }
+    
+    select {
+        width: 150px;
+        padding: 3px 8px;
+        border: 1px solid rgb(173, 173, 173);
+        border-radius: 0;
+        background-color: white;
+        margin-top: 5px;
+    }
+    span {
+        text-align: left;
+    }
+    .align-left {
+        color: grey;
+        margin-top: 25px;
+    }
+    .loader {
+        display: none;
+        margin: auto;
+    }
+    .info {
+        text-align: left;
+        display: block;
+        margin: 20px 15%;
+    }
+}
+.Dashboard {
+    .NotLoggedIn {
+        padding: 30px;
+        margin: 0px 20px;
+        margin-top: 12vh;
+        display: none;
+    }
+    .LoggedIn {
+        margin-top: 20px;
+        display: none;
+    }
+}
+.Signin, .select-logo {
+    display: none;
+    filter: drop-shadow(0 0 0.4rem rgb(90, 90, 90));
+    z-index: 15;
+    background-color: white;
+    width: 75%;
+    position: fixed;
+    left: 50%;
+    margin-left: -37.5%;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    height: 85vh;
+    margin-top: -40px;
+    a {
+        color: blue;
+    }
+    input {
+        margin-top: 10px;
+    }
+    strong {
+        font-size: large;
+    }
+    img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+    .cross {
+        margin-top: -100px;
+        cursor: pointer;
+        float: right;
+        width: 20px;
+    }
+    .loader {
+        display: none;
+        margin: auto;
+        float: none;
+    }
+}
+.AddNew {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    .loader {
+        display: none;
+        margin: auto;
+    }
+    label {
+        margin-left: -200px;
+    }
+    #min, #max {
+        width: 200px;
+        padding: 10px;
+    }
+    .btn {
+        width: 400px;
+    }
+    .cross {
+        margin-left: 30px;
+    }
+    .Header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .HomeMain {
+        .Banner {
+            .row .col-sm-6 {
+                .slideShow {
+                    margin-top: -20px;
+                    margin-left: 20px;
+                    .slide {
+                        img {
+                            width: 300px;
+                            filter: drop-shadow(0 0 0.5rem rgb(70, 70, 70));
+                        }
+                    }
+                }
+            }
+                    
+        }
+    }
+}
+@media only screen and (max-width: 940px) {
+    .Dashboard {
+        .responsive {
+            display: block;
+        }
+        .desktop {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .HomeMain {
+        .Banner {
+            .row .col-sm-6 {
+                .slideShow {
+                    margin-top: 30px;
+                    margin-left: 0px;
+                    .slide {
+                        img {
+                            width: 260px;
+                            filter: drop-shadow(0 0 0.5rem rgb(70, 70, 70));
+                        }
+                    }
+                }
+            }
+                    
+        }
+    }
+}
+@media only screen and (max-width: 590px) {
+    .Dashboard {
+        .Top {
+            padding-top: 60px;
+        }
+    }
+    .HomeMain {
+        .Banner {
+            .row .col-sm-6 {
+                .slideShow {
+                    display: none;
+                }
+                .logo {
+                    display: block;
+                    width: 80px;
+                    padding: 0px;
+                    margin: -20px auto;
+                }
+            }
+                    
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .Header nav {
+        .nav-link {
+            font-size: larger;
+        }
+        .nav-item {
+            padding: 8px;
+        }
+        .active {
+            margin-top: 16px;
+        }
+        img {
+            width: 150px;
+        }
+    }
+    .HomeMain {
+        .Banner {
+            box-shadow: none;
+            text-align: center;
+            .logo {
+                margin: auto;
+            }
+            .row .col-sm-6 {
+                text-align: center;
+                .btn-success {
+                    box-shadow: 0;
+                }
+                h2 {
+                    margin-top: 30px;
+                }
+            }
+        }
+        .Main {
+            .Widget2 {
+                padding: 6px 0px;
+                margin: 12px 10px;
+            }
+            .WhySponsor {
+                overflow-x: hidden;
+                padding: 20px 0px;
+                .content {
+                    padding: 10px 30px;
+                }
+                img {
+                    width: 100%;
+                    
+                }
+            }
+            .content {
+                margin: 0;
+                margin-top: 30px;
+            }
+            .Widget1 {
+                display: block;
+                .row .col-xs-4 {
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .SponsorSignUp {
+        .info {
+            
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .input, .btn, textarea, .categoryOther, .platformOther {
+            width: 90%;
+        }
+        .row .col-xs-6 {
+            width: 50%;
+        }
+    }
+    .AddNew {
+        .input, .btn, textarea {
+            width: 90%;
+        }
+        #min, #max {
+            width: 90%;
+        }
+    }
+    .Signin, .select-logo {
+        width: 90%;
+        height: 480px;
+        margin-left: -45%;
+        .input, .btn {
+            width: 90%;
+        }
+    }
+}
