@@ -400,12 +400,13 @@ body {
 .SponsorSignUp, .Signin {
   margin-top: 60px;
   text-align: center; }
-  .SponsorSignUp .page1, .SponsorSignUp .page2, .Signin .page1, .Signin .page2 {
+  .SponsorSignUp .page1, .SponsorSignUp .page2, .SponsorSignUp h4, .SponsorSignUp p, .Signin .page1, .Signin .page2, .Signin h4, .Signin p {
     padding: 0px 20px; }
-    .SponsorSignUp .page1 h4, .SponsorSignUp .page2 h4, .Signin .page1 h4, .Signin .page2 h4 {
-      padding: 0px 40px; }
   .SponsorSignUp .page2, .Signin .page2 {
     display: none; }
+  .SponsorSignUp .Header, .Signin .Header {
+    padding: 0;
+    text-align: left; }
   .SponsorSignUp .btn-success, .Signin .btn-success {
     width: 400px;
     border-radius: 2px;

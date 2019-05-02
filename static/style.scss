@@ -500,14 +500,15 @@ body {
 .SponsorSignUp, .Signin {
     margin-top: 60px;
     text-align: center;
-    .page1, .page2 {
+    .page1, .page2, h4, p {
         padding: 0px 20px;
-        h4 {
-            padding: 0px 40px;
-        }
     }
     .page2 {
         display: none;
+    }
+    .Header {
+        padding: 0;
+        text-align: left;
     }
     .btn-success {
         width: 400px;
