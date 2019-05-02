@@ -500,6 +500,12 @@ body {
 .SponsorSignUp, .Signin {
     margin-top: 60px;
     text-align: center;
+    .page1, .page2 {
+        padding: 0px 20px;
+        h4 {
+            padding: 0px 40px;
+        }
+    }
     .page2 {
         display: none;
     }
@@ -706,6 +712,11 @@ body {
             width: 150px;
         }
     }
+    .SponsorDash {
+        .btn-success {
+            width: 120px;
+        }
+    }
     .HomeMain {
         .Banner {
             box-shadow: none;
@@ -719,7 +730,7 @@ body {
                     box-shadow: 0;
                 }
                 h2 {
-                    margin-top: 30px;
+                    margin-top: 10px;
                 }
             }
         }

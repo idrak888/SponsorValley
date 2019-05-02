@@ -400,6 +400,10 @@ body {
 .SponsorSignUp, .Signin {
   margin-top: 60px;
   text-align: center; }
+  .SponsorSignUp .page1, .SponsorSignUp .page2, .Signin .page1, .Signin .page2 {
+    padding: 0px 20px; }
+    .SponsorSignUp .page1 h4, .SponsorSignUp .page2 h4, .Signin .page1 h4, .Signin .page2 h4 {
+      padding: 0px 40px; }
   .SponsorSignUp .page2, .Signin .page2 {
     display: none; }
   .SponsorSignUp .btn-success, .Signin .btn-success {
@@ -534,6 +538,9 @@ body {
   .Header nav img {
     width: 150px; }
 
+  .SponsorDash .btn-success {
+    width: 120px; }
+
   .HomeMain .Banner {
     box-shadow: none;
     text-align: center; }
@@ -544,7 +551,7 @@ body {
       .HomeMain .Banner .row .col-sm-6 .btn-success {
         box-shadow: 0; }
       .HomeMain .Banner .row .col-sm-6 h2 {
-        margin-top: 30px; }
+        margin-top: 10px; }
   .HomeMain .Main .Widget2 {
     padding: 6px 0px;
     margin: 12px 10px; }
