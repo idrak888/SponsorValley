@@ -161,6 +161,14 @@ body {
         .HomeMain .Main .Widget2 .SponsorModule h5 {
           -webkit-transition: font-size .35s;
           transition: font-size .35s; }
+        .HomeMain .Main .Widget2 .SponsorModule:active {
+          background-color: #207be4;
+          color: white;
+          cursor: pointer; }
+          .HomeMain .Main .Widget2 .SponsorModule:active h5 {
+            font-size: 25px; }
+          .HomeMain .Main .Widget2 .SponsorModule:active .secondary-text {
+            color: white; }
         .HomeMain .Main .Widget2 .SponsorModule:hover, .HomeMain .Main .Widget2 .SponsorModule:active {
           background-color: #207be4;
           color: white;

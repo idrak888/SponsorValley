@@ -201,6 +201,17 @@ body {
                     -webkit-transition: font-size .35s;
                     transition: font-size .35s; 
                 }
+                &:active {
+                    background-color: rgb(32, 123, 228);
+                    color: white;
+                    cursor: pointer;
+                    h5 {
+                        font-size: 25px;
+                    }
+                    .secondary-text {
+                        color: white;
+                    }
+                }
                 &:hover, &:active {
                     background-color: rgb(32, 123, 228);
                     color: white;

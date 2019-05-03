@@ -102,7 +102,7 @@ class Main extends Component {
                                     <h4>Increased visibility</h4>
                                     <p>Event sponsorship enables businesses and organisations to receive more media coverage and support from experts.</p>
                                 </div>   */}
-                                <img src="https://media.giphy.com/media/dAuGnmt5J1fyKUE0hY/giphy.gif" width="100"/>
+                                <img src="https://media.giphy.com/media/Y2nVuhyj1AI3XD8j7o/giphy.gif" width="100"/>
                                 <h4>Increased visibility and brand exposure</h4>
                             </div>
                             <div className="col-sm-4 defect">
