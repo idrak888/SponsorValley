@@ -89,23 +89,29 @@ class Main extends Component {
                         <h3 className="text-primary">Why sponsor?</h3>
                         <br/>
                         <div className="row">
-                            <div className="col-m-4">
-                            <div className="reasons">
+                            <div className="col-sm-4">
+                            {/* <div className="reasons">
                                     <h4>Building a reputation</h4>
                                     <p>Sponsoring an event is a good way to demonstrate an expertise in a certain field and build a brand reputation.</p>
+                            </div> */}
+                                <img src="https://media.giphy.com/media/hTrarNOfqNDNazpFb0/giphy.gif" width="150"/>
+                                <h4>Building a reputation worldwide</h4>
                             </div>
-                            </div>
-                            <div className="col-m-4">
-                                <div className="reasons">
+                            <div className="col-sm-4">
+                                {/* <div className="reasons">
                                     <h4>Increased visibility</h4>
                                     <p>Event sponsorship enables businesses and organisations to receive more media coverage and support from experts.</p>
-                                </div>  
+                                </div>   */}
+                                <img src="https://media.giphy.com/media/dAuGnmt5J1fyKUE0hY/giphy.gif" width="100"/>
+                                <h4>Increased visibility and brand exposure</h4>
                             </div>
-                            <div className="col-m-4">
-                                <div className="reasons">
+                            <div className="col-sm-4 defect">
+                                {/* <div className="reasons">
                                     <h4>New business partnerships</h4>
                                     <p>Events are not only great for generating leads but also for finding new partners and meeting like-minded professionals.</p>
-                                </div>
+                                </div> */}
+                                <img src="https://media.giphy.com/media/cNlb1lAkU0SyUliiEN/giphy.gif" width="120"/>
+                                <h4>New business partnerships</h4>
                             </div>
                         </div>
                     </div>

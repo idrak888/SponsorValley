@@ -161,13 +161,13 @@ body {
         .HomeMain .Main .Widget2 .SponsorModule h5 {
           -webkit-transition: font-size .35s;
           transition: font-size .35s; }
-        .HomeMain .Main .Widget2 .SponsorModule:hover {
+        .HomeMain .Main .Widget2 .SponsorModule:hover, .HomeMain .Main .Widget2 .SponsorModule:active {
           background-color: #207be4;
           color: white;
           cursor: pointer; }
-          .HomeMain .Main .Widget2 .SponsorModule:hover h5 {
+          .HomeMain .Main .Widget2 .SponsorModule:hover h5, .HomeMain .Main .Widget2 .SponsorModule:active h5 {
             font-size: 25px; }
-          .HomeMain .Main .Widget2 .SponsorModule:hover .secondary-text {
+          .HomeMain .Main .Widget2 .SponsorModule:hover .secondary-text, .HomeMain .Main .Widget2 .SponsorModule:active .secondary-text {
             color: white; }
   .HomeMain .WhySponsor {
     background-color: white;
@@ -176,18 +176,16 @@ body {
     text-align: center; }
     .HomeMain .WhySponsor .col-sm-6 {
       padding: 20px; }
-    .HomeMain .WhySponsor .col-m-4 {
-      margin: 12px auto; }
-    .HomeMain .WhySponsor .reasons {
-      width: 270px;
-      height: 300px;
-      padding: 50px 20px;
-      color: white;
-      background-color: #13AB54;
-      border-radius: 4px;
-      display: block;
-      margin: auto;
-      filter: drop-shadow(0 0 0.5rem #555555); }
+    .HomeMain .WhySponsor .col-sm-4 {
+      height: 200px;
+      padding: 40px;
+      margin: 12px auto;
+      text-align: center; }
+      .HomeMain .WhySponsor .col-sm-4 img {
+        display: block;
+        margin: auto; }
+    .HomeMain .WhySponsor .defect {
+      margin-top: -20px; }
 
 .SponsorDash, .NonSponsorDash {
   background-color: #FBFBFB;
@@ -570,6 +568,8 @@ body {
     display: block; }
     .HomeMain .Main .Widget1 .row .col-xs-4 img {
       width: 40px; }
+  .HomeMain .Main .WhySponsor img {
+    width: 120px; }
 
   .SponsorSignUp .info {
     margin-left: 5%;
