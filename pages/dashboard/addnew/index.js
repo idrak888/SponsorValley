@@ -47,7 +47,7 @@ class AddNew extends Component {
         return (
             <div className="AddNew">
                 <Page>
-                    <h2>Add new sponsorship <a href="/dashboard"><img className="cross" width="18" src="/static/widgets/cross.png"/></a></h2>
+                    <h2>Add new sponsorship <a href="/dashboard"><img className="cross" width="18" src="/static/widgets/back.png"/></a></h2>
                     <br/>
                     <form>
                         <textarea rows="5" id="des" cols="12" placeholder="What you need"></textarea>

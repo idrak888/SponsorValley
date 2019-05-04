@@ -2,7 +2,7 @@ import React from 'react';
 
 const Widget3 = props => {
     return (
-        <div id="Widget3" classNames="Widget3">
+        <div id="Widget3" className="Widget3">
             <div className="row">
                 <div className="col-sm-6">
                     <img src="/static/widgets/computer.png" width="200"/>

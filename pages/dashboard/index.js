@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SponsorDash from '../../components/SponsorDash';
-// import NonSponsorDash from './NonSponsor/NonSponsorDash';
+import NonSponsorDash from '../../components/NonSponsorDash';
 import Page from '../../layouts/main';
 
 class Dashboard extends Component {
@@ -26,9 +26,9 @@ class Dashboard extends Component {
         }
     }
     renderDash = () => {
-        if (this.state.user.type == 'sponsor seeker account') {
-            // return <NonSponsorDash/>
-        }else {
+        if (this.state.user.type == 'sponsor seeker account' || !this.state.user.type) {
+            return <NonSponsorDash/>
+        }else if (this.state.user.type == 'sponsor account' || this.state.user){
             return <SponsorDash id={this.state.userId}  companyName={this.state.user.companyName} companyType={this.state.user.productType} email={this.state.user.email1}/>
         }
     }

@@ -9,20 +9,36 @@ class Main extends Component {
     state = {
         sponsors: []
     }
+    
     componentDidMount() {
-        // window.onscroll = function() {scrollFunction()};
-        // function scrollFunction() {
-        //     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-        //         document.querySelector('.Widget2').style.display = 'block';
-        //     } else {
-        //         document.querySelector('.Widget2').style.display = 'none';
-        //     }
-        // }
+        window.addEventListener('scroll', this.handleScroll);
         axios.get("https://desolate-cove-35133.herokuapp.com/sponsors")
         .then(doc => {
             this.setState({sponsors:doc.data});
         });
         this.carousel();
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+    
+    handleScroll = () => {
+        var modules = document.querySelectorAll('.SponsorModule');
+
+        if (document.documentElement.scrollTop > 872) {
+            for (let i=0;i<modules.length;i++) {
+                modules[i].style.opacity = '1';
+                modules[i].style.height = 'auto';
+            }
+        }  
+        
+        if (document.body.scrollTop >  2036 || document.documentElement.scrollTop > 2036) {
+            document.querySelectorAll('.Widget3 img')[0].style.opacity = '1';
+            document.querySelectorAll('.Widget3 img')[1].style.opacity = '1';
+        } else {
+            document.querySelectorAll('.Widget3 img')[0].style.opacity = '0';
+            document.querySelectorAll('.Widget3 img')[1].style.opacity = '0';
+        }
     }
     slideIndex = 0;
     carousel = () => {
@@ -95,7 +111,7 @@ class Main extends Component {
                                     <p>Sponsoring an event is a good way to demonstrate an expertise in a certain field and build a brand reputation.</p>
                             </div> */}
                                 <img src="https://media.giphy.com/media/hTrarNOfqNDNazpFb0/giphy.gif" width="150"/>
-                                <h4>Building a reputation worldwide</h4>
+                                <strong>Building a reputation worldwide</strong>
                             </div>
                             <div className="col-sm-4">
                                 {/* <div className="reasons">
@@ -103,7 +119,7 @@ class Main extends Component {
                                     <p>Event sponsorship enables businesses and organisations to receive more media coverage and support from experts.</p>
                                 </div>   */}
                                 <img src="https://media.giphy.com/media/Y2nVuhyj1AI3XD8j7o/giphy.gif" width="100"/>
-                                <h4>Increased visibility and brand exposure</h4>
+                                <strong>Increased visibility and brand exposure</strong>
                             </div>
                             <div className="col-sm-4 defect">
                                 {/* <div className="reasons">
@@ -111,7 +127,7 @@ class Main extends Component {
                                     <p>Events are not only great for generating leads but also for finding new partners and meeting like-minded professionals.</p>
                                 </div> */}
                                 <img src="https://media.giphy.com/media/cNlb1lAkU0SyUliiEN/giphy.gif" width="120"/>
-                                <h4>New business partnerships</h4>
+                                <strong>New business partnerships</strong>
                             </div>
                         </div>
                     </div>

@@ -5,16 +5,7 @@ import Page from '../layouts/main';
 import Footer from '../components/Footer';
 import dynamic from 'next/dynamic';
 
-const DynamicComponentWithNoSSR = dynamic(
-    () => import('../components/Main'),
-    {
-      ssr: false
-    }
-)
-  
-
 class Homepage extends Component {
-    
     render () {
         return (
             <div className="Homepage">

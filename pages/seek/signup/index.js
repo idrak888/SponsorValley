@@ -48,7 +48,7 @@ class SeekerSignUp extends Component {
                 type: 'sponsor seeker account',
                 name: userObj.name,
                 who: userObj.who,
-                email2: userObj.email,
+                email1: userObj.email,
                 platform: userObj.platform,
                 category: userObj.category,
                 platformOther: userObj.platformOther,
