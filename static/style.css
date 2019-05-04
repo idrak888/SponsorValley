@@ -540,7 +540,9 @@ body {
     display: block;
     width: 80px;
     padding: 0px;
-    margin: -20px auto; } }
+    margin: -20px auto; }
+  .HomeMain .Widget2 .SponsorModule {
+    opacity: 1; } }
 @media only screen and (max-width: 576px) {
   .Header nav .nav-link {
     font-size: larger; }
