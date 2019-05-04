@@ -541,8 +541,9 @@ body {
     width: 80px;
     padding: 0px;
     margin: -20px auto; }
-  .HomeMain .Widget2 .SponsorModule {
-    opacity: 1; } }
+  .HomeMain .Main .Widget2 .SponsorModule {
+    opacity: 1;
+    height: auto; } }
 @media only screen and (max-width: 576px) {
   .Header nav .nav-link {
     font-size: larger; }

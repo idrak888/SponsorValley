@@ -714,11 +714,14 @@ body {
             }
                     
         }
-        .Widget2 {
-            .SponsorModule {
-                opacity: 1;
+        .Main {
+            .Widget2 {
+                .SponsorModule {
+                    opacity: 1;
+                    height: auto;
+                }
             }
-        }
+        }   
     }
 }
 @media only screen and (max-width: 576px) {
