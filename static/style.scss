@@ -86,7 +86,7 @@ body {
         height: 500px;
         color: white;
         font-size: 17px;
-        background-image: linear-gradient($primary-color, rgb(17, 150, 75));
+        background-image: url("bannerback.jpg");
         box-shadow: inset 0px 0px 0px grey;
         .row .col2 {
             margin-top: 55px;
@@ -117,8 +117,7 @@ body {
         }
         .btn-green {
             color: white;
-            background-color: rgb(46, 46, 46);
-            filter: drop-shadow(0 0 0.5rem rgb(70, 70, 70));
+            background-color: $primary-color;
         }
         .btn {
             width: 200px;
@@ -827,7 +826,7 @@ body {
         width: 90%;
         height: 480px;
         margin-left: -45%;
-        .input, .btn {
+        .input, .btn, input {
             width: 90%;
         }
     }

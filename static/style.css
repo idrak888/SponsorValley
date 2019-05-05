@@ -70,7 +70,7 @@ body {
     height: 500px;
     color: white;
     font-size: 17px;
-    background-image: linear-gradient(#13AB54, #11964b);
+    background-image: url("bannerback.jpg");
     box-shadow: inset 0px 0px 0px grey; }
     .HomeMain .Banner .row .col2 {
       margin-top: 55px; }
@@ -93,8 +93,7 @@ body {
       margin-top: 20px; }
     .HomeMain .Banner .btn-green {
       color: white;
-      background-color: #2e2e2e;
-      filter: drop-shadow(0 0 0.5rem #464646); }
+      background-color: #13AB54; }
     .HomeMain .Banner .btn {
       width: 200px;
       border-radius: 2px;
@@ -609,7 +608,7 @@ body {
     width: 90%;
     height: 480px;
     margin-left: -45%; }
-    .Signin .input, .Signin .btn, .select-logo .input, .select-logo .btn {
+    .Signin .input, .Signin .btn, .Signin input, .select-logo .input, .select-logo .btn, .select-logo input {
       width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */

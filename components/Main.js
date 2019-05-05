@@ -15,6 +15,7 @@ class Main extends Component {
         axios.get("https://desolate-cove-35133.herokuapp.com/sponsors")
         .then(doc => {
             this.setState({sponsors:doc.data});
+            document.querySelector('#loader').style.display = 'none';
         });
         this.carousel();
     }
@@ -57,7 +58,6 @@ class Main extends Component {
                 <div className="Banner">
                     <div className="row">
                         <div className="col-sm-6">
-                            <img src="/static/logo.png" className="logo" />
                             <div className="slideShow">
                                 <div className="slide">
                                     <img src="static/banner-slideshow/slide1.png" className="slide1"/>
@@ -94,6 +94,10 @@ class Main extends Component {
                     <br/>
                     <h2 className="text-primary">Open Sponsorships</h2>
                     <div className="Widget2">
+                        <br/>
+                        <br/>
+                        <img id="loader" className="loader" width="100" src="https://newvitruvian.com/images/transparent-google-loader-gif-4.gif" />
+                        
                         {this.state.sponsors.map(i => {
                             return <SponsorModule companyName={i.by} min={i.priceRange.minprice} max={i.priceRange.maxprice} description={i.description} date={i.dateCreated}/>;
                         })}
