@@ -27,7 +27,7 @@ class Dashboard extends Component {
     }
     renderDash = () => {
         if (this.state.user.type == 'sponsor seeker account' || !this.state.user.type) {
-            return <NonSponsorDash/>
+            return <NonSponsorDash name={this.state.user.name} who={this.state.user.who} email={this.state.user.email1} link={this.state.user.businessLink} />
         }else if (this.state.user.type == 'sponsor account' || this.state.user){
             return <SponsorDash id={this.state.userId}  companyName={this.state.user.companyName} companyType={this.state.user.productType} email={this.state.user.email1}/>
         }

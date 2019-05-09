@@ -105,6 +105,8 @@ body {
     text-align: center;
     background-color: #FBFBFB;
     margin-top: -22px; }
+    .HomeMain .Main #loader {
+      padding: 50px; }
     .HomeMain .Main .btn-primary {
       width: 200px; }
     .HomeMain .Main .intro-p {
@@ -312,6 +314,15 @@ body {
   .SponsorDash .side, .NonSponsorDash .side {
     height: 400px;
     padding-top: 20px; }
+
+.NonSponsorDash .info {
+  padding: 20px; }
+.NonSponsorDash .box1 {
+  padding: 30px; }
+.NonSponsorDash .notifications {
+  padding: 25px 10px; }
+.NonSponsorDash h4 {
+  text-align: left; }
 
 .Dashboard {
   margin-top: 60px; }

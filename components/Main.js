@@ -94,8 +94,6 @@ class Main extends Component {
                     <br/>
                     <h2 className="text-primary">Open Sponsorships</h2>
                     <div className="Widget2">
-                        <br/>
-                        <br/>
                         <img id="loader" className="loader" width="100" src="https://newvitruvian.com/images/transparent-google-loader-gif-4.gif" />
                         
                         {this.state.sponsors.map(i => {
