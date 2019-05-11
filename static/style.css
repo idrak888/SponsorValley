@@ -147,9 +147,6 @@ body {
       filter: drop-shadow(0 0 0.3rem #a8a8a8);
       overflow-y: hidden; }
       .HomeMain .Main .Widget2 .SponsorModule {
-        transition: 0.35s ease;
-        opacity: 0;
-        height: 3px;
         color: black;
         background-color: white;
         position: relative;
@@ -199,6 +196,16 @@ body {
           margin: auto; }
       .HomeMain .Main .WhySponsor .defect {
         margin-top: -20px; }
+
+.Learnmore {
+  margin-top: 60px;
+  text-align: center; }
+  .Learnmore p {
+    padding: 0px 60px;
+    font: 1.4em sans-serif; }
+  .Learnmore video {
+    width: 60%;
+    height: auto; }
 
 .SponsorDash, .NonSponsorDash {
   background-color: #FBFBFB;
@@ -419,42 +426,42 @@ body {
     .Footer .Contact img {
       width: 70px; }
 
-.SponsorSignUp, .Signin {
+.SponsorSignUp, .Signin, .Learnmore {
   margin-top: 60px;
   text-align: center; }
-  .SponsorSignUp .page1, .SponsorSignUp .page2, .SponsorSignUp h4, .SponsorSignUp p, .Signin .page1, .Signin .page2, .Signin h4, .Signin p {
+  .SponsorSignUp .page1, .SponsorSignUp .page2, .SponsorSignUp h4, .SponsorSignUp p, .Signin .page1, .Signin .page2, .Signin h4, .Signin p, .Learnmore .page1, .Learnmore .page2, .Learnmore h4, .Learnmore p {
     padding: 0px 20px; }
-  .SponsorSignUp .page2, .Signin .page2 {
+  .SponsorSignUp .page2, .Signin .page2, .Learnmore .page2 {
     display: none; }
-  .SponsorSignUp .Header, .Signin .Header {
+  .SponsorSignUp .Header, .Signin .Header, .Learnmore .Header {
     padding: 0;
     text-align: left; }
-  .SponsorSignUp .btn-success, .Signin .btn-success {
+  .SponsorSignUp .btn-success, .Signin .btn-success, .Learnmore .btn-success {
     width: 400px;
     border-radius: 2px;
     box-shadow: 0; }
-  .SponsorSignUp .row .col-xs-6, .Signin .row .col-xs-6 {
+  .SponsorSignUp .row .col-xs-6, .Signin .row .col-xs-6, .Learnmore .row .col-xs-6 {
     margin: auto;
     width: 200px; }
-  .SponsorSignUp .categoryOther, .SponsorSignUp .platformOther, .Signin .categoryOther, .Signin .platformOther {
+  .SponsorSignUp .categoryOther, .SponsorSignUp .platformOther, .Signin .categoryOther, .Signin .platformOther, .Learnmore .categoryOther, .Learnmore .platformOther {
     display: none;
     margin: 5px 0px; }
-  .SponsorSignUp select, .Signin select {
+  .SponsorSignUp select, .Signin select, .Learnmore select {
     width: 150px;
     padding: 3px 8px;
     border: 1px solid #adadad;
     border-radius: 0;
     background-color: white;
     margin-top: 5px; }
-  .SponsorSignUp span, .Signin span {
+  .SponsorSignUp span, .Signin span, .Learnmore span {
     text-align: left; }
-  .SponsorSignUp .align-left, .Signin .align-left {
+  .SponsorSignUp .align-left, .Signin .align-left, .Learnmore .align-left {
     color: grey;
     margin-top: 25px; }
-  .SponsorSignUp .loader, .Signin .loader {
+  .SponsorSignUp .loader, .Signin .loader, .Learnmore .loader {
     display: none;
     margin: auto; }
-  .SponsorSignUp .info, .Signin .info {
+  .SponsorSignUp .info, .Signin .info, .Learnmore .info {
     text-align: left;
     display: block;
     margin: 20px 15%; }
@@ -543,6 +550,9 @@ body {
 @media only screen and (max-width: 590px) {
   .Dashboard .Top {
     padding-top: 60px; }
+
+  .Learnmore video {
+    width: 80%; }
 
   .HomeMain .Banner .row .col-sm-6 .slideShow {
     display: none; }

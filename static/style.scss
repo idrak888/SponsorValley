@@ -176,7 +176,6 @@ body {
             }
         }
         .Widget2 {
-            
             padding: 10px 16px;
             height: 800px;
             border: 1px solid lightgrey;
@@ -186,9 +185,6 @@ body {
             filter: drop-shadow(0 0 0.3rem rgb(168, 168, 168));
             overflow-y: hidden;
             .SponsorModule {
-                transition: 0.35s ease;
-                opacity: 0;
-                height: 3px;
                 .secondary-text {
                     color: rgb(131, 131, 131);
                 }
@@ -259,7 +255,18 @@ body {
     }
     
 }
-
+.Learnmore {
+    margin-top: 60px;
+    text-align: center;
+    p {
+        padding: 0px 60px;
+        font: 1.4em sans-serif;
+    }
+    video {
+        width: 60%;
+        height: auto;
+    }
+}
 .SponsorDash, .NonSponsorDash{
     background-color: #FBFBFB;
     overflow-x: hidden;
@@ -532,7 +539,7 @@ body {
         }
     }
 }
-.SponsorSignUp, .Signin {
+.SponsorSignUp, .Signin, .Learnmore {
     margin-top: 60px;
     text-align: center;
     .page1, .page2, h4, p {
@@ -713,6 +720,11 @@ body {
     .Dashboard {
         .Top {
             padding-top: 60px;
+        }
+    }
+    .Learnmore {
+        video {
+            width: 80%;
         }
     }
     .HomeMain {

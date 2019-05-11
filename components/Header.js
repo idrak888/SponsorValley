@@ -67,7 +67,7 @@ class Header extends Component {
                                 <a class="nav-link" href="/dashboard">Dashboard <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/howitworks">How it works</a>
+                                <a class="nav-link" href="/learnmore">How it works</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

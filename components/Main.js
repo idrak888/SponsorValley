@@ -15,9 +15,8 @@ class Main extends Component {
         axios.get("https://desolate-cove-35133.herokuapp.com/sponsors")
         .then(doc => {
             this.setState({sponsors:doc.data});
-            document.querySelector('#loader').style.display = 'none';
+            document.querySelector('#sponsorLoader').style.display = 'none';
         });
-        this.carousel();
     }
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
@@ -25,14 +24,6 @@ class Main extends Component {
     
     handleScroll = () => {
         var modules = document.querySelectorAll('.SponsorModule');
-
-        if (document.documentElement.scrollTop > 872) {
-            for (let i=0;i<modules.length;i++) {
-                modules[i].style.opacity = '1';
-                modules[i].style.height = 'auto';
-            }
-        }  
-        
         if (document.body.scrollTop >  2036 || document.documentElement.scrollTop > 2036) {
             document.querySelectorAll('.Widget3 img')[0].style.opacity = '1';
             document.querySelectorAll('.Widget3 img')[1].style.opacity = '1';
@@ -40,17 +31,6 @@ class Main extends Component {
             document.querySelectorAll('.Widget3 img')[0].style.opacity = '0';
             document.querySelectorAll('.Widget3 img')[1].style.opacity = '0';
         }
-    }
-    slideIndex = 0;
-    carousel = () => {
-        var x = document.querySelectorAll('.slide');
-        for (let i=0;i<3;i++) {
-            x[i].childNodes[0].style.display = 'none';
-        }
-        this.slideIndex++;
-        if (this.slideIndex > 3) {this.slideIndex = 1};
-        x[this.slideIndex-1].childNodes[0].style.display = 'block';
-        setTimeout(this.carousel, 1000);
     }
     render () {
         return (
@@ -60,13 +40,7 @@ class Main extends Component {
                         <div className="col-sm-6">
                             <div className="slideShow">
                                 <div className="slide">
-                                    <img src="static/banner-slideshow/slide1.png" className="slide1"/>
-                                </div>
-                                <div className="slide">
-                                    <img src="static/banner-slideshow/slide2.png" className="slide2"/>
-                                </div>
-                                <div className="slide">
-                                    <img src="static/banner-slideshow/slide3.png" className="slide3"/>
+                                    <img src="https://im4.ezgif.com/tmp/ezgif-4-d0b05e4532f3.gif" className="slide1"/>
                                 </div>
                             </div>
                         </div>
@@ -86,15 +60,16 @@ class Main extends Component {
                     <div className="content" id="content">
                         <h3 className="text-primary">What is SponsorValley?</h3>
                         <p className="intro-p text-secondary">
-                            SponsorValley is a platform built to connect <strong>sponsors</strong> such as corporate companies
-                            with <strong>sponsor seekers</strong> who could be Youtubers, Bloggers, Events, or Individuals looking for partnerships.
+                            The future of sponsorships is here. SponsorValley is a platform designed to connect <strong>brands</strong> with <strong>influencers</strong> making sponsorships easier than ever before!    
                         </p>
+                        <br/>
+                        <a href="/learnmore"><button className="btn btn-primary">Learn more</button></a>
                     </div>
                     <br/>
                     <br/>
                     <h2 className="text-primary">Open Sponsorships</h2>
                     <div className="Widget2">
-                        <img id="loader" className="loader" width="100" src="https://newvitruvian.com/images/transparent-google-loader-gif-4.gif" />
+                        <img id="sponsorLoader" width="100" src="https://newvitruvian.com/images/transparent-google-loader-gif-4.gif" />
                         
                         {this.state.sponsors.map(i => {
                             return <SponsorModule companyName={i.by} min={i.priceRange.minprice} max={i.priceRange.maxprice} description={i.description} date={i.dateCreated}/>;
