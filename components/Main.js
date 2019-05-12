@@ -40,7 +40,7 @@ class Main extends Component {
                         <div className="col-sm-6">
                             <div className="slideShow">
                                 <div className="slide">
-                                    <img src="https://im4.ezgif.com/tmp/ezgif-4-d0b05e4532f3.gif" className="slide1"/>
+                                    <img src="/static/banner-slideshow/slideshow.gif" className="slide1"/>
                                 </div>
                             </div>
                         </div>
@@ -68,14 +68,16 @@ class Main extends Component {
                     <br/>
                     <br/>
                     <h2 className="text-primary">Open Sponsorships</h2>
-                    <div className="Widget2">
-                        <img id="sponsorLoader" width="100" src="https://newvitruvian.com/images/transparent-google-loader-gif-4.gif" />
-                        
-                        {this.state.sponsors.map(i => {
-                            return <SponsorModule companyName={i.by} min={i.priceRange.minprice} max={i.priceRange.maxprice} description={i.description} date={i.dateCreated}/>;
-                        })}
+                    <div className="widget2Container">
+                        <div className="Widget2">
+                            <img id="sponsorLoader" width="100" src="https://newvitruvian.com/images/transparent-google-loader-gif-4.gif" />
+                            
+                            {this.state.sponsors.map(i => {
+                                return <SponsorModule companyName={i.by} min={i.priceRange.minprice} max={i.priceRange.maxprice} description={i.description} date={i.dateCreated}/>;
+                            })}
+                        </div>
                     </div>
-                    <button className="btn btn-primary">View more</button>
+                    <a href="/browse"><button className="btn btn-primary">View more</button></a>
                     <br/>
                     <br/>
                     <div className="WhySponsor">

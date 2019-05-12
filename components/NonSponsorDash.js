@@ -118,15 +118,7 @@ class NonSponsorDash extends Component {
                 </div>
                 <div className="box box1">
                     <div className="row">
-                        <div className="col-sm-4">
-                            <div className="finance">
-                                <h4>This month's earnings</h4>
-                                <h2>$389</h2>
-                                <p className="text-secondary">status: not paid</p>
-                                <br/>
-                            </div>
-
-                        </div>
+                        
                         <div className="col-sm-4">
                             <div className="info">
                                 {this.showLogo()}
@@ -152,6 +144,15 @@ class NonSponsorDash extends Component {
                                         )
                                     })}
                             </div>
+                        </div>
+                        <div className="col-sm-4">
+                            <div className="finance">
+                                <h4>This month's earnings</h4>
+                                <h2>$389</h2>
+                                <p className="text-secondary">status: not paid</p>
+                                <br/>
+                            </div>
+
                         </div>
                     </div>
                 </div>

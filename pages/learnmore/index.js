@@ -3,6 +3,7 @@ import Page from '../../layouts/main';
 
 class Learnmore extends Component {
     componentDidMount() {
+        console.log('Mounted');
         document.getElementById('video1').play();
     }
     render(){
@@ -11,11 +12,11 @@ class Learnmore extends Component {
                 <Page>
                     <br/>
                     <br/>
-                    <h2 className="text-primary">What is sponsorvalley?</h2>
+                    <h2>What is sponsorvalley?</h2>
                     
                     <br/>
                     
-                    <video id="video1" width="420" autoplay>
+                    <video id="video1" width="420" controls>
                         <source src="/static/learnmore.mp4" type="video/mp4"/>
                         Your browser does not support HTML5 video.
                     </video>
@@ -23,12 +24,16 @@ class Learnmore extends Component {
                     <br/>
                     <br/>
                     
-                    <p className="intro-p text-secondary">
+                    <p>
                         The future of sponsorships is here. </p>
-                    <p className="text-secondary">
+                    <p>
                         SponsorValley is a platform designed to connect <strong>brands</strong> with <strong>influencers</strong> making sponsorships easier than ever before!    
                     
                     </p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                 </Page>
             </div>
         )

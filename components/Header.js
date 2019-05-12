@@ -61,7 +61,7 @@ class Header extends Component {
                         <ul class="navbar-nav mr-auto">
                         
                             <li class="nav-item active">
-                                <a class="nav-link" href="/browse/sponsors">Browse Sponsors</a>
+                                <a class="nav-link" href="/browse">Browse Sponsors</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/dashboard">Dashboard <span class="sr-only">(current)</span></a>

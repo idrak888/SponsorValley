@@ -108,7 +108,8 @@ body {
     .HomeMain .Main #loader {
       padding: 50px; }
     .HomeMain .Main .btn-primary {
-      width: 200px; }
+      width: 200px;
+      margin-top: 8px; }
     .HomeMain .Main .intro-p {
       font-size: 20px;
       text-align: left; }
@@ -137,14 +138,17 @@ body {
           box-shadow: 3px 3px 3px lightgrey; }
       .HomeMain .Main .GetStarted h3 {
         text-align: center; }
+    .HomeMain .Main .widget2Container {
+      background-image: url("back2.jpeg");
+      height: 840px;
+      padding: 30px 20px; }
     .HomeMain .Main .Widget2 {
       padding: 10px 16px;
-      height: 800px;
+      height: 780px;
       border: 1px solid lightgrey;
-      border-radius: 5px;
       background-color: white;
+      border-radius: 5px;
       margin: 12px 50px;
-      filter: drop-shadow(0 0 0.3rem #a8a8a8);
       overflow-y: hidden; }
       .HomeMain .Main .Widget2 .SponsorModule {
         color: black;
@@ -197,15 +201,8 @@ body {
       .HomeMain .Main .WhySponsor .defect {
         margin-top: -20px; }
 
-.Learnmore {
-  margin-top: 60px;
-  text-align: center; }
-  .Learnmore p {
-    padding: 0px 60px;
-    font: 1.4em sans-serif; }
-  .Learnmore video {
-    width: 60%;
-    height: auto; }
+.BrowseSponsors {
+  margin-top: 60px; }
 
 .SponsorDash, .NonSponsorDash {
   background-color: #FBFBFB;
@@ -475,6 +472,20 @@ body {
   margin-top: 20px;
   display: none; }
 
+.Learnmore {
+  background-color: black;
+  color: white;
+  margin-top: 60px;
+  text-align: center; }
+  .Learnmore p, .Learnmore h2 {
+    padding: 0px 60px;
+    font-size: large; }
+  .Learnmore h2 {
+    font-size: 29px; }
+  .Learnmore video {
+    width: 60%;
+    height: auto; }
+
 .Signin, .select-logo {
   display: none;
   filter: drop-shadow(0 0 0.4rem #5a5a5a);
@@ -552,7 +563,7 @@ body {
     padding-top: 60px; }
 
   .Learnmore video {
-    width: 80%; }
+    width: 86%; }
 
   .HomeMain .Banner .row .col-sm-6 .slideShow {
     display: none; }
@@ -588,6 +599,8 @@ body {
         box-shadow: 0; }
       .HomeMain .Banner .row .col-sm-6 h2 {
         margin-top: -10px; }
+  .HomeMain .Main .widget2Container {
+    padding: 30px 0px; }
   .HomeMain .Main .Widget2 {
     padding: 6px 0px;
     margin: 12px 10px; }
