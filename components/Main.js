@@ -51,7 +51,7 @@ class Main extends Component {
                             <a href="/sponsor/signup"><button className="btn btn-green">Get started</button></a>
                             <br/>
                             <br/>
-                            <a href="/seeker/signup">I want to promote brands instead</a>
+                            <a href="/seek/signup">I want to promote brands instead</a>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,6 @@ class Main extends Component {
                     <div className="widget2Container">
                         <div className="Widget2">
                             <img id="sponsorLoader" width="100" src="https://newvitruvian.com/images/transparent-google-loader-gif-4.gif" />
-                            
                             {this.state.sponsors.map(i => {
                                 return <SponsorModule companyName={i.by} min={i.priceRange.minprice} max={i.priceRange.maxprice} description={i.description} date={i.dateCreated}/>;
                             })}

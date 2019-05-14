@@ -9,13 +9,61 @@ class BrowseSponsors extends Component {
         sponsors: []
     }
     componentDidMount() {
-        console.log('Mounted');
+        axios.get("https://desolate-cove-35133.herokuapp.com/sponsors")
+        .then(doc => {
+            this.setState({sponsors:doc.data});
+            document.querySelector('#sponsorLoader').style.display = 'none';
+        });
     }
     render () {
         return (
             <div className="BrowseSponsors">
                 <Page>
-                    WEE
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="search">
+                                <h2>Search for sponsors</h2>
+                                <input type="text" placeholder="Brand names or sponsor types"/><button className="btn btn-light"><img src="/static/widgets/glass.png" width="20"/></button>
+                            </div>  
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-4">
+                            <div className="filter">
+                                <h4>Filter</h4>
+                                <br/>
+                                <p>By target platform</p>
+                                <select id="platform">
+                                    <option value="youtube">Youtube</option>
+                                    <option value="blog">Blog</option>
+                                    <option value="streamers">Streamers</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <br/>
+                                <br/>
+                                <p>By target category</p> 
+                                <select id="category">
+                                    <option value="tech">Tech</option>
+                                    <option value="humour">Humor</option>
+                                    <option value="gaming">Gaming</option>
+                                    <option value="finance">Finance</option>
+                                    <option value="food">Food</option>
+                                    <option value="fashionandlife">Fashion and Lifestyle</option>
+                                    <option value="automobiles">Automobiles</option>
+                                    <option value="science">Science</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className="col-sm-8">
+                            <div className="list">
+                                <img id="sponsorLoader" width="100" src="https://newvitruvian.com/images/transparent-google-loader-gif-4.gif" />
+                                
+                                {this.state.sponsors.map(i => {
+                                    return <SponsorModule companyName={i.by} min={i.priceRange.minprice} max={i.priceRange.maxprice} description={i.description} date={i.dateCreated}/>;
+                                })}
+                            </div>
+                        </div>
+                    </div>
                 </Page>
             </div>
         );
