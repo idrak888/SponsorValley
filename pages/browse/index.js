@@ -29,7 +29,10 @@ class BrowseSponsors extends Component {
                     </div>
                     <div className="row">
                         <div className="col-sm-4">
-                            <div className="filter">
+                            <div className="collapsible-filter">
+                                <button className="btn btn-dark" data-toggle="collapse" data-target="#demo">Filter+</button>
+                            </div>
+                            <div className="filter" id="demo" className="collapse">
                                 <h4>Filter</h4>
                                 <br/>
                                 <p>By target platform</p>
@@ -52,6 +55,8 @@ class BrowseSponsors extends Component {
                                     <option value="automobiles">Automobiles</option>
                                     <option value="science">Science</option>
                                 </select>
+                                <br/>
+                                <button className="btn btn-primary">GO</button>
                             </div>
                         </div>
                         <div className="col-sm-8">

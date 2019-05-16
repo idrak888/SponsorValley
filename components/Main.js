@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SponsorModule from '../components/SponsorModule';
 import Widget3 from '../components/Widget3';
 import Widget1 from '../components/Widget1';
+import Widget4 from '../components/Widget4';
 import axios from 'axios';
 
 
@@ -84,26 +85,14 @@ class Main extends Component {
                         <br/>
                         <div className="row">
                             <div className="col-sm-4">
-                            {/* <div className="reasons">
-                                    <h4>Building a reputation</h4>
-                                    <p>Sponsoring an event is a good way to demonstrate an expertise in a certain field and build a brand reputation.</p>
-                            </div> */}
                                 <img src="https://media.giphy.com/media/hTrarNOfqNDNazpFb0/giphy.gif" width="150"/>
                                 <strong>Building a reputation worldwide</strong>
                             </div>
                             <div className="col-sm-4">
-                                {/* <div className="reasons">
-                                    <h4>Increased visibility</h4>
-                                    <p>Event sponsorship enables businesses and organisations to receive more media coverage and support from experts.</p>
-                                </div>   */}
                                 <img src="https://media.giphy.com/media/Y2nVuhyj1AI3XD8j7o/giphy.gif" width="100"/>
                                 <strong>Increased visibility and brand exposure</strong>
                             </div>
                             <div className="col-sm-4 defect">
-                                {/* <div className="reasons">
-                                    <h4>New business partnerships</h4>
-                                    <p>Events are not only great for generating leads but also for finding new partners and meeting like-minded professionals.</p>
-                                </div> */}
                                 <img src="https://media.giphy.com/media/cNlb1lAkU0SyUliiEN/giphy.gif" width="120"/>
                                 <strong>New business partnerships</strong>
                             </div>
@@ -149,6 +138,11 @@ class Main extends Component {
                             
                         </div>
                     </div>
+                    <br/>
+                    <hr/>
+                    <br/>
+                    <Widget4/>
+                    <br/>
                 </div>
             </div>
         );

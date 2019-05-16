@@ -139,11 +139,11 @@ body {
       .HomeMain .Main .GetStarted h3 {
         text-align: center; }
     .HomeMain .Main .widget2Container {
-      background-color: #1f202e;
+      background-color: #FBFBFB;
       height: 840px;
       padding: 30px 20px; }
     .HomeMain .Main .Widget2 {
-      padding: 10px 16px;
+      padding: 0px;
       height: 780px;
       border: 1px solid lightgrey;
       background-color: white;
@@ -165,17 +165,10 @@ body {
         .HomeMain .Main .Widget2 .SponsorModule h5 {
           -webkit-transition: font-size .35s;
           transition: font-size .35s; }
-        .HomeMain .Main .Widget2 .SponsorModule:focus {
-          background-color: #207be4;
-          color: white;
-          cursor: pointer; }
-          .HomeMain .Main .Widget2 .SponsorModule:focus h5 {
-            font-size: 25px; }
-          .HomeMain .Main .Widget2 .SponsorModule:focus .secondary-text {
-            color: white; }
         .HomeMain .Main .Widget2 .SponsorModule:hover, .HomeMain .Main .Widget2 .SponsorModule:active {
           background-color: #207be4;
           color: white;
+          border: 0;
           cursor: pointer; }
           .HomeMain .Main .Widget2 .SponsorModule:hover h5, .HomeMain .Main .Widget2 .SponsorModule:active h5 {
             font-size: 25px; }
@@ -204,32 +197,53 @@ body {
 .BrowseSponsors {
   margin-top: 60px;
   overflow-x: hidden; }
+  .BrowseSponsors .SponsorModule:hover, .BrowseSponsors .SponsorModule:active {
+    background-color: #13AB54;
+    color: white;
+    border: 0;
+    cursor: pointer; }
+    .BrowseSponsors .SponsorModule:hover h5, .BrowseSponsors .SponsorModule:active h5 {
+      font-size: 25px; }
+    .BrowseSponsors .SponsorModule:hover .secondary-text, .BrowseSponsors .SponsorModule:active .secondary-text {
+      color: white; }
   .BrowseSponsors .list {
     overflow-y: scroll;
     height: 500px; }
-  .BrowseSponsors .filter {
+  .BrowseSponsors .collapsible-filter .btn {
+    border: 0;
+    width: 100%;
+    border-radius: 0;
+    background-color: #1f202e; }
+  .BrowseSponsors #demo {
     padding: 30px; }
-    .BrowseSponsors .filter select {
+    .BrowseSponsors #demo select {
       width: 200px; }
+    .BrowseSponsors #demo .btn {
+      margin-top: 4px;
+      width: 200px;
+      background-color: #13AB54; }
   .BrowseSponsors .search {
-    background-color: #207be4;
+    background-color: #2284f3;
     color: white;
     text-align: center;
     padding: 20px; }
-    .BrowseSponsors .search input {
-      padding: 6px 10px;
-      width: 410px;
-      border: 1px solid white;
+    .BrowseSponsors .search .btn {
       border-radius: 0;
-      border-bottom-left-radius: 3px;
-      border-top-left-radius: 3px;
-      height: 40px; }
-    .BrowseSponsors .search .btn-light {
-      margin-top: -3px;
-      height: 40px;
-      border-radius: 0;
+      border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
-      border-top-right-radius: 4px; }
+      height: 40px;
+      margin-top: -2px; }
+    .BrowseSponsors .search input {
+      -webkit-appearance: none;
+      border: 0;
+      border-radius: 0;
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px;
+      margin-top: 3px;
+      width: 400px;
+      height: 40px;
+      padding: 6px;
+      margin-bottom: 20px; }
 
 .SponsorDash, .NonSponsorDash {
   background-color: #FBFBFB;
@@ -373,6 +387,16 @@ body {
   border-bottom: 1px solid #a8a8a8; }
   .SponsorModule .corner {
     width: 60px; }
+
+#Widget4 {
+  padding: 40px 20px;
+  background-image: linear-gradient(#1f202e, #272727);
+  color: white; }
+  #Widget4 img {
+    margin-top: 15px;
+    width: 500px; }
+  #Widget4 .btn {
+    width: 490px; }
 
 #Widget3 {
   padding: 40px 20px;
@@ -614,6 +638,9 @@ body {
     margin-top: 16px; }
   .Header nav img {
     width: 150px; }
+
+  #Widget4 img, #Widget4 .btn {
+    width: 70%; }
 
   .SponsorDash .btn-success {
     width: 120px; }
