@@ -13,7 +13,7 @@ class Main extends Component {
     
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
-        axios.get("https://desolate-cove-35133.herokuapp.com/sponsors")
+        axios.get("https://desolate-cove-35133.herokuapp.com/sponsors/few")
         .then(doc => {
             this.setState({sponsors:doc.data});
             document.querySelector('#sponsorLoader').style.display = 'none';
@@ -76,8 +76,8 @@ class Main extends Component {
                                 return <SponsorModule companyName={i.by} min={i.priceRange.minprice} max={i.priceRange.maxprice} description={i.description} date={i.dateCreated}/>;
                             })}
                         </div>
+                        <a href="/browse"><button className="btn btn-primary">View more</button></a>
                     </div>
-                    <a href="/browse"><button className="btn btn-primary">View more</button></a>
                     <br/>
                     <br/>
                     <div className="WhySponsor">

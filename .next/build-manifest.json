@@ -23,7 +23,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/learnmore": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/seek/signup": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

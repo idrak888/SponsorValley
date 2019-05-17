@@ -47,7 +47,7 @@ class AddNew extends Component {
         return (
             <div className="AddNew">
                 <Page>
-                    <h2>Add new sponsorship <a href="/dashboard"><img className="cross" width="18" src="/static/widgets/back.png"/></a></h2>
+                    <h2>Add new sponsorship <a href="/dashboard"><img className="cross" width="24" src="/static/widgets/back.png"/></a></h2>
                     <br/>
                     <form>
                         <textarea rows="5" id="des" cols="12" placeholder="What you need"></textarea>
@@ -71,7 +71,7 @@ class AddNew extends Component {
                         </table>
                         <br/>
                         <button onClick={this.postSponsor} className="btn btn-success">Post</button>
-                        <img id="loader" className="loader" width="40" src="https://www.unlimitedvacationclub.com/assets/images/loading.gif" />
+                        <img id="loader" className="loader" width="40" src="https://newvitruvian.com/images/transparent-google-loader-gif-4.gif" />
                         <br/>
                         <span className="text-danger err" id="err"></span>
                     </form>

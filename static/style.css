@@ -138,13 +138,9 @@ body {
           box-shadow: 3px 3px 3px lightgrey; }
       .HomeMain .Main .GetStarted h3 {
         text-align: center; }
-    .HomeMain .Main .widget2Container {
-      background-color: #FBFBFB;
-      height: 840px;
-      padding: 30px 20px; }
     .HomeMain .Main .Widget2 {
-      padding: 0px;
-      height: 780px;
+      padding: 6px;
+      height: auto;
       border: 1px solid lightgrey;
       background-color: white;
       border-radius: 5px;
