@@ -140,17 +140,27 @@ body {
             width: 200px;
             margin-top: 8px;
         }
-        .intro-p {
-            font-size: 20px;
-            text-align: left;
-        }
         hr {
             border-bottom: 1px solid lightgrey;
             width: 200px;
         }
         .content {
-            padding: 30px;
-            margin: 80px 90px 0px 90px;
+            padding: 100px 40px;
+            background-color: rgb(31, 32, 46);
+            color: white;
+            p {
+                font-size: x-large;
+            }
+            h3 {
+                margin-top: 30px;
+            }
+            .slogan {
+                font-size: xx-large;
+                font-weight: lighter;
+                transition: 0.5s ease-in;
+                -webkit-transition: 0.75s ease-in;
+                opacity: 0;
+            }
         }
         .GetStarted {
             margin-top: 20px;

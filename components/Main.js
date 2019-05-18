@@ -24,6 +24,7 @@ class Main extends Component {
     }
     
     handleScroll = () => {
+        console.log(document.body.scrollTop);
         var modules = document.querySelectorAll('.SponsorModule');
         if (document.body.scrollTop >  2036 || document.documentElement.scrollTop > 2036) {
             document.querySelectorAll('.Widget3 img')[0].style.opacity = '1';
@@ -31,6 +32,11 @@ class Main extends Component {
         } else {
             document.querySelectorAll('.Widget3 img')[0].style.opacity = '0';
             document.querySelectorAll('.Widget3 img')[1].style.opacity = '0';
+        }
+        if (document.body.scrollTop >  30 || document.documentElement.scrollTop > 30) {
+            document.querySelector('.slogan').style.opacity = '1';
+        } else {
+            document.querySelector('.slogan').style.opacity = '0';
         }
     }
     render () {
@@ -59,8 +65,11 @@ class Main extends Component {
                 <div className="Main">
                     <Widget1/>
                     <div className="content" id="content">
+                        <br/>
+                        <p className="slogan">"Get recognised, and feel it."</p>
+                        <br/>
                         <h3 className="text-primary">What is SponsorValley?</h3>
-                        <p className="intro-p text-secondary">
+                        <p className="intro-p">
                             The future of sponsorships is here. SponsorValley is a platform designed to connect <strong>brands</strong> with <strong>influencers</strong> making sponsorships easier than ever before!    
                         </p>
                         <br/>

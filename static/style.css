@@ -110,15 +110,23 @@ body {
     .HomeMain .Main .btn-primary {
       width: 200px;
       margin-top: 8px; }
-    .HomeMain .Main .intro-p {
-      font-size: 20px;
-      text-align: left; }
     .HomeMain .Main hr {
       border-bottom: 1px solid lightgrey;
       width: 200px; }
     .HomeMain .Main .content {
-      padding: 30px;
-      margin: 80px 90px 0px 90px; }
+      padding: 100px 40px;
+      background-color: #1f202e;
+      color: white; }
+      .HomeMain .Main .content p {
+        font-size: x-large; }
+      .HomeMain .Main .content h3 {
+        margin-top: 30px; }
+      .HomeMain .Main .content .slogan {
+        font-size: xx-large;
+        font-weight: lighter;
+        transition: 0.5s ease-in;
+        -webkit-transition: 0.75s ease-in;
+        opacity: 0; }
     .HomeMain .Main .GetStarted {
       margin-top: 20px;
       background-color: white;
